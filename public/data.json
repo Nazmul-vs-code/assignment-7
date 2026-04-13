@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Jenkins",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&h=400&auto=format&fit=crop",
+    "email": "sarah.j@techflow.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["work", "mentor"],
+    "bio": "Former manager at TechFlow. Expert in UX design and career growth.",
+    "goal": 30,
+    "next_due_date": "2026-05-11"
+  },
+  {
+    "id": 2,
+    "name": "Arjun Mehta",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&h=400&auto=format&fit=crop",
+    "email": "mehta.arjun@outlook.com",
+    "days_since_contact": 15,
+    "status": "overdue",
+    "tags": ["childhood", "close friend"],
+    "bio": "Best friends since 3rd grade. We usually grab coffee whenever I'm in town.",
+    "goal": 7,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 3,
+    "name": "Elena Rodriguez",
+    "picture": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&h=400&auto=format&fit=crop",
+    "email": "elena.rod@gmail.com",
+    "days_since_contact": 6,
+    "status": "almost due",
+    "tags": ["gym", "hobby"],
+    "bio": "Tennis partner. Very competitive but great for staying motivated.",
+    "goal": 7,
+    "next_due_date": "2026-04-14"
+  },
+  {
+    "id": 4,
+    "name": "David Chen",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&h=400&auto=format&fit=crop",
+    "email": "dchen_dev@protonmail.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["networking", "conference"],
+    "bio": "Met at React Conf. Senior DevOps engineer with deep AWS knowledge.",
+    "goal": 30,
+    "next_due_date": "2026-03-25"
+  },
+  {
+    "id": 5,
+    "name": "Sophie Mueller",
+    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&h=400&auto=format&fit=crop",
+    "email": "sophie.m@berlin-design.de",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["family", "sister"],
+    "bio": "My younger sister living in Berlin. Loves architecture and photography.",
+    "goal": 3,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 6,
+    "name": "Marcus Thorne",
+    "picture": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&h=400&auto=format&fit=crop",
+    "email": "m.thorne@vanguard.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["investor", "work"],
+    "bio": "Angel investor interested in fintech. Met through a mutual colleague.",
+    "goal": 14,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 7,
+    "name": "Jessica Wu",
+    "picture": "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=400&h=400&auto=format&fit=crop",
+    "email": "jess_wu@creative.io",
+    "days_since_contact": 80,
+    "status": "overdue",
+    "tags": ["college", "old friend"],
+    "bio": "Study buddy from Computer Science days. Now a freelance illustrator.",
+    "goal": 60,
+    "next_due_date": "2026-02-28"
+  },
+  {
+    "id": 8,
+    "name": "Omar Al-Fayed",
+    "picture": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=400&h=400&auto=format&fit=crop",
+    "email": "omar.fayed@global.net",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["neighbor", "close friend"],
+    "bio": "Downstairs neighbor. We often share gardening tips and local news.",
+    "goal": 14,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 9,
+    "name": "Chloe Thompson",
+    "picture": "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=400&h=400&auto=format&fit=crop",
+    "email": "chloe.t@lifestyle.com",
+    "days_since_contact": 19,
+    "status": "almost due",
+    "tags": ["travel", "hobby"],
+    "bio": "Met during the hiking trip in Nepal. Avid traveler and food blogger.",
+    "goal": 21,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 10,
+    "name": "Leo Rossi",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&h=400&auto=format&fit=crop",
+    "email": "leo.rossi@italy-dev.it",
+    "days_since_contact": 0,
+    "status": "on-track",
+    "tags": ["open source", "collaborator"],
+    "bio": "Core contributor to the library I use. Extremely helpful with PRs.",
+    "goal": 90,
+    "next_due_date": "2026-07-12"
+  }
+]
