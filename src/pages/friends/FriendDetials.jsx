@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router';
 import FriendCard from '../../components/shared/FriendCard';
 import { LuBellPlus, LuHistory, LuUsers } from 'react-icons/lu';
 import { IoArchiveOutline, IoCallOutline, IoChatbubbleOutline, IoVideocamOutline } from 'react-icons/io5';
 import { MdDeleteOutline, MdOutlinePeopleAlt } from 'react-icons/md';
+import { FriendContext } from '../../contexts/FriendContext';
 
 const FriendDetails = () => {
     const { id } = useParams();
     const loader = useLoaderData();
     const expectedFriend = loader.find(f => f.id == id);
+
+    const {handleInteractinos} = useContext(FriendContext);
 
     if (!expectedFriend) return <div className="text-center mt-20">Loading...</div>;
 
@@ -73,15 +76,21 @@ const FriendDetails = () => {
                 <div>
                     <h3 className='font-bold text-[#1A4D3F] mb-3'>Quick Check-In</h3>
                     <div className='grid grid-cols-3 gap-4'>
-                        <Link className='bg-gray-50 border border-gray-100 rounded-xl p-4 flex flex-col items-center gap-2 hover:bg-white hover:shadow-md transition-all'>
+                        <Link 
+                        onClick={()=> handleInteractinos('call' , expectedFriend.name)}
+                        className='bg-gray-50 border border-gray-100 rounded-xl p-4 flex flex-col items-center gap-2 hover:bg-white hover:shadow-md transition-all'>
                             <IoCallOutline className='text-2xl' /> <span className='text-sm font-medium'>Call</span>
                         </Link>
-                        
-                        <Link className='bg-gray-50 border border-gray-100 rounded-xl p-4 flex flex-col items-center gap-2 hover:bg-white hover:shadow-md transition-all'>
+
+                        <Link 
+                        onClick={()=> handleInteractinos('Text ' , expectedFriend.name)}
+                        className='bg-gray-50 border border-gray-100 rounded-xl p-4 flex flex-col items-center gap-2 hover:bg-white hover:shadow-md transition-all'>
                             <IoChatbubbleOutline className='text-2xl' /> <span className='text-sm font-medium'>Text</span>
                         </Link>
 
-                        <Link className='bg-gray-50 border border-gray-100 rounded-xl p-4 flex flex-col items-center gap-2 hover:bg-white hover:shadow-md transition-all'>
+                        <Link 
+                        onClick={()=> handleInteractinos('Video Call ' , expectedFriend.name)}
+                        className='bg-gray-50 border border-gray-100 rounded-xl p-4 flex flex-col items-center gap-2 hover:bg-white hover:shadow-md transition-all'>
                             <IoVideocamOutline className='text-2xl' /> <span className='text-sm font-medium'>Video</span>
                         </Link>
                     </div>

@@ -8,7 +8,7 @@ const Timeline = () => {
 
     return (
         <div className=''>
-           <h2 className=' bg-red-500'> This is timeline page</h2>
+           <h2 className=' text-3xl font-bold'>TimeLine</h2>
         </div>
     );
 };
