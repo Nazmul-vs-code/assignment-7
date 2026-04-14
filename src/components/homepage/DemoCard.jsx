@@ -2,7 +2,7 @@ import React from 'react';
 
 const DemoCard = () => {
     return (
-        <div className='grid grid-cols-4 gap-5 '>
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-5 '>
             <div className=' p-15 bg-base-200 text-center space-y-3.5'>
                 <h2 className='font-semibold text-2xl'>10</h2>
                 <h3 className='font-[20%]'>Total Friends</h3>

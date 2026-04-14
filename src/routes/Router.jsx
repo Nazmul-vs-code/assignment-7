@@ -3,6 +3,7 @@ import Mainlayout from "../layouts/Mainlayout";
 import Homepage from "../pages/Homepage/Homepage";
 import Timeline from "../pages/Timeline/Timeline";
 import Stats from "../pages/Stats/Stats";
+import FriendDetials from "../pages/friends/FriendDetials";
 
 export const router = createBrowserRouter([
     {
@@ -20,6 +21,11 @@ export const router = createBrowserRouter([
             {
                 path: '/stats',
                 element: <Stats />
+            },
+            {
+                path: `/frienddetials/:id`,
+                loader: () => fetch(`/data.json`),
+                element: <FriendDetials />
             },
         ]
     }
