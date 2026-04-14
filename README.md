@@ -1,16 +1,24 @@
-# React + Vite
+🌿Name :  KeenKeeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Description:
+KeenKeeper is a personalized relationship management tool designed to help users track and nurture their most meaningful connections. Instead of letting interactions fade into memory, KeenKeeper provides a "digital shelf" where you can log, categorize, and visualize your social life.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
+    1. Frontend: React.js, Tailwind CSS, DaisyUI
 
-## React Compiler
+    2. Icons & UI: React Icons, Lucide React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+    3. State Management: React Context API
 
-## Expanding the ESLint configuration
+    4. Data Visualization: Recharts (for interaction analytics)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    5. Storage: LocalStorage API (for persistent browser-based data)
+
+    6. Notifications: React-Toastify
+
+
+⚡Key Features:
+    📊 Dynamic Relationship Analytics:
+    🔍 Smart Timeline Filtering:
+    🤝 Collaboration & Networking
