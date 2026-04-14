@@ -77,19 +77,19 @@ const FriendDetails = () => {
                     <h3 className='font-bold text-[#1A4D3F] mb-3'>Quick Check-In</h3>
                     <div className='grid grid-cols-3 gap-4'>
                         <Link 
-                        onClick={()=> handleInteractinos('call' , expectedFriend.name)}
+                        onClick={()=> handleInteractinos('Call' , expectedFriend.name)}
                         className='bg-gray-50 border border-gray-100 rounded-xl p-4 flex flex-col items-center gap-2 hover:bg-white hover:shadow-md transition-all'>
                             <IoCallOutline className='text-2xl' /> <span className='text-sm font-medium'>Call</span>
                         </Link>
 
                         <Link 
-                        onClick={()=> handleInteractinos('Text ' , expectedFriend.name)}
+                        onClick={()=> handleInteractinos('Text' , expectedFriend.name)}
                         className='bg-gray-50 border border-gray-100 rounded-xl p-4 flex flex-col items-center gap-2 hover:bg-white hover:shadow-md transition-all'>
                             <IoChatbubbleOutline className='text-2xl' /> <span className='text-sm font-medium'>Text</span>
                         </Link>
 
                         <Link 
-                        onClick={()=> handleInteractinos('Video Call ' , expectedFriend.name)}
+                        onClick={()=> handleInteractinos('Video' , expectedFriend.name)}
                         className='bg-gray-50 border border-gray-100 rounded-xl p-4 flex flex-col items-center gap-2 hover:bg-white hover:shadow-md transition-all'>
                             <IoVideocamOutline className='text-2xl' /> <span className='text-sm font-medium'>Video</span>
                         </Link>

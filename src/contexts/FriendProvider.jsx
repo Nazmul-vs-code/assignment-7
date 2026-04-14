@@ -5,8 +5,13 @@ import { toast } from 'react-toastify';
 const FriendProvider = ({ children }) => {
 
     const savedData = JSON.parse(localStorage.getItem(`my_data`) || `[]`);
-
     const [interactions, setInteractions] = useState(savedData);
+
+    // 1. Creating arrays for each type of data
+    const callLogs = interactions.filter(item => item.type === 'Call');
+    const textLogs = interactions.filter(item => item.type === 'Text');
+    const videoLogs = interactions.filter(item => item.type === 'Video');
+
 
     const handleInteractinos = (type, friendName) => {
 
@@ -18,22 +23,29 @@ const FriendProvider = ({ children }) => {
 
         const newEntry = {
             id: Date.now(),
+            type: type,
+            friendName: friendName,
             title: `${type} with ${friendName}`,
             time: simpleDate
         }
 
-        const updatedList = [...interactions , newEntry];
+        const updatedList = [...interactions, newEntry];
         setInteractions(updatedList);
-        localStorage.setItem(`my_data` , JSON.stringify(updatedList));
+        localStorage.setItem(`my_data`, JSON.stringify(updatedList));
 
         toast.success(`${type} recorded!`);
     }
 
 
+
+
     const data = {
-        handleInteractinos , 
+        handleInteractinos,
         interactions,
-        setInteractions
+        setInteractions,
+        callLogs,
+        textLogs,
+        videoLogs
     }
 
     return <FriendContext.Provider value={data}>
