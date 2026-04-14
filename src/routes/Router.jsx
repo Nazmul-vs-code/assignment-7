@@ -4,6 +4,7 @@ import Homepage from "../pages/Homepage/Homepage";
 import Timeline from "../pages/Timeline/Timeline";
 import Stats from "../pages/Stats/Stats";
 import FriendDetials from "../pages/friends/FriendDetials";
+import Notfound from "../components/Notfound";
 
 export const router = createBrowserRouter([
     {
@@ -27,6 +28,7 @@ export const router = createBrowserRouter([
                 loader: () => fetch(`/data.json`),
                 element: <FriendDetials />
             },
-        ]
+        ],
+        errorElement: <Notfound />
     }
 ])
