@@ -28,6 +28,10 @@ export const router = createBrowserRouter([
                 loader: () => fetch(`/data.json`),
                 element: <FriendDetials />
             },
+            {
+                path: '*', 
+                element: <Notfound />
+            }
         ],
         errorElement: <Notfound />
     }
