@@ -7,7 +7,8 @@ const Timeline = () => {
     const { interactions,
         callLogs,
         textLogs,
-        videoLogs
+        videoLogs,
+        clearHistory
 
     } = useContext(FriendContext);
 
@@ -34,7 +35,7 @@ const Timeline = () => {
             </div>
 
             {/* Dropdown */}
-            <div className="dropdown dropdown-start">
+            <div className="dropdown dropdown-start flex justify-between">
                 <div tabIndex={0} role="button" className="btn m-1">
                     {filterType === 'All' ? 'Filter' : filterType} ⬇️
                 </div>
@@ -44,9 +45,15 @@ const Timeline = () => {
                     <li onClick={() => setFilterType('Text')}><a>Text</a></li>
                     <li onClick={() => setFilterType('Video')}><a>Video call</a></li>
                 </ul>
+
+                <button
+                    onClick={clearHistory}
+                    className="btn btn-sm btn-outline btn-error opacity-70 hover:opacity-100 mb-8">
+                    Clear History
+                </button>
             </div>
 
-            {/* 2. Map over displayData instead of filteredData state */}
+
             <div className='flex flex-col gap-3'>
                 {
                     displayData.length > 0 ? (
@@ -58,6 +65,7 @@ const Timeline = () => {
                     )
                 }
             </div>
+
         </div>
     );
 };

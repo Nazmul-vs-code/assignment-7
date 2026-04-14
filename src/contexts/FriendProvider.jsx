@@ -29,12 +29,20 @@ const FriendProvider = ({ children }) => {
             time: simpleDate
         }
 
+
         const updatedList = [...interactions, newEntry];
         setInteractions(updatedList);
         localStorage.setItem(`my_data`, JSON.stringify(updatedList));
 
         toast.success(`${type} recorded!`);
     }
+
+    const clearHistory = () => {
+
+        setInteractions([]);
+        localStorage.removeItem('my_data');
+        toast.info("History cleared successfully!");
+    };
 
 
 
@@ -45,7 +53,8 @@ const FriendProvider = ({ children }) => {
         setInteractions,
         callLogs,
         textLogs,
-        videoLogs
+        videoLogs,
+        clearHistory
     }
 
     return <FriendContext.Provider value={data}>
